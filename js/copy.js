@@ -15,7 +15,7 @@ const replaceCopyText =  function (e) {
         // data 一个 DOMString 表示要添加到 drag object 的数据
         clipboardData.setData('text/plain', text)
     }
-}ba
+}
 
 const cancelCopyText = function() {
     document.addEventListener('copy', replaceCopyText);
