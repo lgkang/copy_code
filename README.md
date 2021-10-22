@@ -10,6 +10,7 @@
 ### 导入clone下来的的根目录
 
 ![Image text](https://raw.githubusercontent.com/lgkang/copy_code/main/img/img2.png)
+
 1、打开右上角“开发开发者模式”
 
 
