@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "复制代码",
+  "version": "1.0.0",
+  "description": "更改 html contentEditable 达到复制代码的目的",
+  "icons":
+  {
+    "128": "image/logo.png"
+  },
+  "browser_action":
+  {
+    "default_icon": "image/logo.png",
+    "default_title": "复制代码",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/copy.js"],
+
+      "run_at": "document_start"
+    }
+  ],
+  "permissions":
+  [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
+
+}
